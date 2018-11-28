@@ -1,33 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import Layout from './components/Layout'
+import store from './store'
+import sass from './sass/styles.scss'
 
-class CoolBeans extends React.Component {
-  constructor () {
-    super()
-  }
-  render () {
-    const coolStyles = {
-      color: '#fff',
-      fontSize: '40px',
-      margin: '0',
-      padding: '1rem',
-      border: '1px solid green',
-      display: 'inline-block',
-      backgroundColor: 'green'
-    }
-
-    return (
-      <div>
-        <p style={coolStyles}>coolio</p>
-      </div>
-    )
-  }
-}
+const app = document.getElementById('app')
 
 ReactDOM.render(
-  <div>
-    <h1>Hello React</h1>
-    <CoolBeans />
-  </div>,
-  document.getElementById('index')
-)
+  <Provider store={store}>
+    <Layout />
+  </Provider>, app)
