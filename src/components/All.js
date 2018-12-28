@@ -51,7 +51,7 @@ class FooterCont extends React.Component {
 
     return (
       <span className='social'>
-        <span>John Webster &bull;</span>
+        <span>Lorem Ipsum &bull;</span>
         <a href={links[0]}
           target='_blank'
           style={iconStyle}>
@@ -77,22 +77,15 @@ class AboutUs extends React.Component {
     super()
   }
   render () {
-    let me = 'Hello - I\'m a UI/UX Developer in the Seattle and like ' +
-    'to build web applications using JavaScript, CSS and HTML5. ' +
-    'If I\'m not doing that, you will find me walking my favorite dog, Rosie!'
-    let project = 'This site is a sandbox built for exploring ' +
-    'patterns with React and Redux.'
+    let me = 'Lorem ipsum dolor sit amet'
+    let project = 'Lorem ipsum'
 
     return (
       <div className='about-us-wrapper'>
-        <h1>About</h1>
+        <h1>Heading</h1>
         <p>{project}</p>
-        <h2>Me</h2>
+        <h2>Subhead</h2>
         <p>{me}</p>
-        <div className='photos-me-wrapper'>
-          <div className='about-me' />
-          <div className='about-me family' />
-        </div>
       </div>
     )
   }

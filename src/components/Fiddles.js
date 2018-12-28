@@ -9,7 +9,7 @@ class FiddlesJS extends React.Component {
 
     return (
       <div>
-        <h1>Fiddles</h1>
+        <h1>Patterns</h1>
         <div className='fiddle'>
           {
             data.map((item, i) => {
